@@ -1,0 +1,23 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router";
+import HomePage from './Pages/HomeLayoutPages/HomePage';
+import "./index.css"
+import HomeLayout from './Components/Layouts/HomeLayout';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    Component: HomeLayout,
+  },
+]);
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>,
+)
