@@ -19,12 +19,12 @@ const Navbar = () => {
             <div className='w-11/12 md:w-10/12 max-w-7xl mx-auto flex justify-between py-4'>
                 {/* logo */}
                 <div className="text-3xl font-extrabold text-primary select-none cursor-default">
-                    Sufian<span className="text-white">Dev</span>
+                    Sufian<span className="text-[#d5d5d5]">Dev</span>
                 </div>
                 <div className='flex items-center'>
                     {/* main navbar */}
 
-                    <div className='lg:gap-6 xl:gap-10 items-center text-white hidden lg:flex'>
+                    <div className='lg:gap-6 xl:gap-10 items-center text-[#d5d5d5] hidden lg:flex'>
                         <NavigationMenu>
                             <NavigationMenuList className='flex lg:gap-4'>
 
@@ -45,10 +45,10 @@ const Navbar = () => {
                         </NavigationMenu>
 
                         <a
-                            href="/sufian_CV.pdf"
+                            href="/sufian_resume.pdf"
                             download
                         >
-                            <Button className="rounded-full border-2 border-primary text-white bg-transparent hover:bg-primary"><Download strokeWidth={2}/>Resume</Button>
+                            <Button className="rounded-full border-2 border-primary text-[#d5d5d5] bg-transparent hover:bg-primary"><Download strokeWidth={2}/>Resume</Button>
                         </a>
                     </div>
 
@@ -60,10 +60,10 @@ const Navbar = () => {
                             </DrawerTrigger>
                             <DrawerContent>
                                 <a
-                                    href="/sufian_CV.pdf"
+                                    href="/sufian_resume.pdf"
                                     download
                                 >
-                                    <Button className="rounded-full border-2 border-primary text-white bg-transparent hover:bg-primary">Download CV</Button>
+                                    <Button className="rounded-full border-2 border-primary text-[#d5d5d5] bg-transparent hover:bg-primary"><Download strokeWidth={2}/>Resume</Button>
                                 </a>
                             </DrawerContent>
                         </Drawer>
