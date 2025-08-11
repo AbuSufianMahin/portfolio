@@ -1,10 +1,12 @@
 import React from 'react';
 import Header from './Header';
+import AboutMe from './AboutMe';
 
 const HomePage = () => {
     return (
         <div>
-            <Header></Header> 
+            <Header></Header>
+            <AboutMe></AboutMe> 
         </div>
     );
 };

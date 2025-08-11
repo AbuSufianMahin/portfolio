@@ -8,7 +8,7 @@ import { Download } from "lucide-react";
 const Navbar = () => {
     const navLinks = [
         { name: "Home", href: "#home" },
-        { name: "About", href: "#about" },
+        { name: "About Me", href: "#about-me" },
         { name: "Skills", href: "#skills" },
         { name: "Projects", href: "#projects" },
         { name: "Contact", href: "#contact" },
