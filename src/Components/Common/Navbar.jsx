@@ -33,7 +33,6 @@ const Navbar = () => {
                                     <NavLink
                                         key={navItem.name}
                                         to={navItem.href}
-                                        end={navItem.href === "/"}
                                         className="px-4 py-1.5 rounded-full font-bold hover:text-primary transition duration-300"
 
                                     >
