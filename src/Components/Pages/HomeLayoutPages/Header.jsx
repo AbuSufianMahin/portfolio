@@ -1,5 +1,5 @@
-import portfolioDP from "../../assets/Images/porfolio-dp.jpg"
-import { Button } from '../../Components/ui/button';
+import portfolioDP from "../../../assets/Images/porfolio-dp.jpg"
+import { Button } from '../../ui/button';
 import { Download } from 'lucide-react';
 import Typewriter from 'typewriter-effect';
 
