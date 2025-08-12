@@ -4,7 +4,6 @@ import { Button } from "../../../../ui/button"
 import { NavLink } from "react-router"
 
 import projectsData from "../../../../../../Data/projectData";
-import { MoveRight } from "lucide-react";
 
 const Projects = () => {
 
@@ -30,7 +29,10 @@ const Projects = () => {
 
                             <div className="px-6 pb-4 flex flex-col justify-between h-full gap-4">
                                 <div className="justify-center">
-                                    <h2 className="text-2xl font-semibold text-primary mb-2 md:mb-3">{name}</h2>
+                                    <NavLink to={`/project-details/${name}`}>
+                                        <h2 className="text-2xl font-semibold text-primary mb-2 md:mb-3  hover:scale-102 transition duration-300 w-fit">{name.replace("-", " ")}</h2>
+                                    </NavLink>
+
                                     <p className="text-[#d5d5d5] text-xs lg:text-sm">{description}</p>
                                 </div>
 
@@ -53,7 +55,7 @@ const Projects = () => {
                                         ))}
                                     </div>
                                     <div>
-                                        <NavLink to="">
+                                        <NavLink to={`/project-details/${name}`}>
                                             <Button variant={"ghost"} className="p-0 rounded-4xl hover:bg-transparent hover:text-primary cursor-pointer transition duration-300">View Details</Button>
                                         </NavLink>
                                     </div>

@@ -14,8 +14,6 @@ const ScrollToHash = () => {
           el.scrollIntoView({ behavior: "smooth" });
         }, 50);
       }
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [location]);
 
