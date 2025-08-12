@@ -12,7 +12,7 @@ const Header = () => {
     ];
 
     return (
-        <section className='py-12 lg:py-24'>
+        <section className='py-12 lg:py-20'>
             <div className='w-11/12 md:w-10/12 max-w-6xl mx-auto flex flex-col md:flex-row text-center md:text-left items-center gap-6 lg:gap-10'>
                 <div className='md:flex-4 lg:flex-2'>
                     <div className='p-5 rounded-full bg-[#444444]'>

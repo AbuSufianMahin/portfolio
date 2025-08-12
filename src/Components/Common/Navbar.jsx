@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 import { NavLink } from 'react-router';
 import { NavigationMenu, NavigationMenuList } from "../ui/navigation-menu";
 
-import { Download } from "lucide-react";
+import { Download, Menu } from "lucide-react";
 
 const Navbar = () => {
     const navLinks = [
@@ -15,7 +15,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="sticky top-0 border-b-3 border-primary bg-background">
+        <nav className="sticky top-0 z-50 border-b-3 border-primary bg-background">
             <div className='w-11/12 md:w-10/12 max-w-7xl mx-auto flex justify-between py-4'>
                 {/* logo */}
                 <div className="text-3xl font-extrabold text-primary select-none cursor-default">
@@ -55,7 +55,7 @@ const Navbar = () => {
                     <div className='flex lg:hidden'>
                         <Drawer direction="right">
                             <DrawerTrigger asChild>
-                                <Button variant="outline">Open Drawer</Button>
+                                <Button variant="outline" size={"sm"} className="border-primary border-2 text-primary"><Menu /></Button>
                             </DrawerTrigger>
                             <DrawerContent>
                                 <a

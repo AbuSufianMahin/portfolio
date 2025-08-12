@@ -8,6 +8,7 @@ const HomeLayout = () => {
         <div className='poppins-regular'>
             <Navbar></Navbar>
             <HomePage></HomePage>
+            <Footer></Footer>
         </div>
     );
 };

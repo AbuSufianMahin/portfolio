@@ -1,14 +1,14 @@
 
 const AboutMe = () => {
     return (
-        <section className='py-10' id="about-me">
+        <section className='py-4 md:py-10' id="about-me">
             <div className='w-11/12 md:w-10/12 max-w-7xl mx-auto'>
                 <div className="text-center space-y-2 lg:max-w-1/2 mx-auto">
                     <h1 className='text-3xl text-primary font-bold'>About Me</h1>
                     {/* <p className="text-[#d5d5d5] ">An insight into my background, the passions that fuel my work, and the experiences that shape how I approach technology and life.</p> */}
                 </div>
 
-                <div className="flex flex-col xl:flex-row items-center gap-8 mt-16">
+                <div className="flex flex-col xl:flex-row items-center gap-8 mt-8 lg:mt-16">
                     <div className='space-y-3 text-sm md:text-base leading-relaxed text-[#d5d5d5] flex-1'>
                         <p>
                             Hi, I'm <span className="font-bold">Abu Sufian Mahin</span>, a Computer Science undergraduate at <span className="font-bold">BRAC University</span> with a passion for learning and creating. I learned Python as part of my studies here, completing projects like a fraud detection machine learning model. I've also developed web applications using React and worked with both SQL and NoSQL databases.
