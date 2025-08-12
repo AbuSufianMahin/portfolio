@@ -11,30 +11,6 @@ import shadcnLogo from "../src/assets/Icons/shadcnui.svg"
 const projectsData = [
     {
         id: 1,
-        name: "TaskLance",
-        image: tasklanceHeaderSS,
-        description:
-            "TaskLance is a comprehensive freelance task marketplace that seamlessly connects clients with skilled freelancers. It enables efficient task posting, bidding, and project management, making it easier for users to find quality help or work opportunities.",
-        techList: [
-            { name: "React", icon: reactLogo },
-            { name: "TailwindCSS", icon: tailwindLogo },
-            { name: "MongoDB", icon: mongoDBLogo },
-        ],
-    },
-    {
-        id: 2,
-        name: "Dine Manager",
-        image: dinemanagerHeaderSS,
-        description:
-            "Dine Manager is a restaurant order management system designed to simplify food ordering. Users can browse menu items, place orders smoothly, and keep track of their selections without the complexity of payment or table reservations.",
-        techList: [
-            { name: "React", icon: reactLogo },
-            { name: "TailwindCSS", icon: tailwindLogo },
-            { name: "MongoDB", icon: mongoDBLogo },
-        ],
-    },
-    {
-        id: 3,
         name: "PetConnect",
         image: petconnectHeaderSS,
         description:
@@ -46,6 +22,31 @@ const projectsData = [
             { name: "MongoDB", icon: mongoDBLogo },
         ],
     },
+    {
+        id: 2,
+        name: "TaskLance",
+        image: tasklanceHeaderSS,
+        description:
+            "TaskLance is a comprehensive freelance task marketplace that seamlessly connects clients with skilled freelancers. It enables efficient task posting, bidding, and project management, making it easier for users to find quality help or work opportunities.",
+        techList: [
+            { name: "React", icon: reactLogo },
+            { name: "TailwindCSS", icon: tailwindLogo },
+            { name: "MongoDB", icon: mongoDBLogo },
+        ],
+    },
+    {
+        id: 3,
+        name: "Dine Manager",
+        image: dinemanagerHeaderSS,
+        description:
+            "Dine Manager is a restaurant order management system designed to simplify food ordering. Users can browse menu items, place orders smoothly, and keep track of their selections without the complexity of payment or table reservations.",
+        techList: [
+            { name: "React", icon: reactLogo },
+            { name: "TailwindCSS", icon: tailwindLogo },
+            { name: "MongoDB", icon: mongoDBLogo },
+        ],
+    },
+    
 ];
 
 
