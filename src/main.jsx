@@ -14,11 +14,22 @@ import "./index.css"
 
 
 import HomeLayout from './Components/Layouts/HomeLayout';
+import HomePage from './Components/Pages/HomeLayoutPages/Home/HomePage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: HomeLayout,
+    children: [
+      {
+        index: true,
+        Component: HomePage
+      },
+      {
+        path: "/project-details/:projectName",
+        element: <div>hi</div>
+      }
+    ]
   },
 ]);
 

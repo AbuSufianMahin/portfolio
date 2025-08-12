@@ -1,11 +1,13 @@
 import Navbar from "../Common/Navbar";
 import Footer from "../Common/Footer";
-import HomePage from "../Pages/HomeLayoutPages/Home/HomePage";
+import { Outlet } from "react-router";
+import ScrollToHash from "../../Hooks/ScrollToHash";
 const HomeLayout = () => {
     return (
         <div className='poppins-regular'>
             <Navbar></Navbar>
-            <HomePage></HomePage>
+            <ScrollToHash />
+            <Outlet></Outlet>
             <Footer></Footer>
         </div>
     );

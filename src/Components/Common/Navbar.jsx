@@ -1,6 +1,6 @@
 import { Drawer, DrawerTrigger, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerFooter, DrawerClose } from "../ui/drawer";
 import { Button } from '../ui/button';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { NavigationMenu, NavigationMenuList } from "../ui/navigation-menu";
 
 import { Download, Menu } from "lucide-react";
@@ -8,11 +8,11 @@ import ResumeButton from "./ResumeButton";
 
 const Navbar = () => {
     const navLinks = [
-        { name: "Home", href: "#home" },
-        { name: "About Me", href: "#about-me" },
-        { name: "Skills", href: "#skills" },
-        { name: "Projects", href: "#projects" },
-        { name: "Contact", href: "#contact" },
+        { name: "Home", href: "/#home" },
+        { name: "About Me", href: "/#about-me" },
+        { name: "Skills", href: "/#skills" },
+        { name: "Projects", href: "/#projects" },
+        { name: "Contact", href: "/#contact" },
     ];
 
     return (

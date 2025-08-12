@@ -3,7 +3,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
+html {
+  scroll-padding-top: 60px;
+  /* Adjust to your header height */
+}
 
 .poppins-regular {
   font-family: "Poppins", sans-serif;
@@ -125,6 +128,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
