@@ -4,6 +4,7 @@ import { NavLink } from 'react-router';
 import { NavigationMenu, NavigationMenuList } from "../ui/navigation-menu";
 
 import { Download, Menu } from "lucide-react";
+import ResumeButton from "./ResumeButton";
 
 const Navbar = () => {
     const navLinks = [
@@ -43,12 +44,7 @@ const Navbar = () => {
                             </NavigationMenuList>
                         </NavigationMenu>
 
-                        <a
-                            href="/sufian_resume.pdf"
-                            download
-                        >
-                            <Button className="rounded-full border-2 border-primary text-[#d5d5d5] bg-transparent hover:bg-primary"><Download strokeWidth={2}/>Resume</Button>
-                        </a>
+                        <ResumeButton/>
                     </div>
 
                     {/* mobile device drawer */}
@@ -58,12 +54,7 @@ const Navbar = () => {
                                 <Button variant="outline" size={"sm"} className="border-primary border-2 text-primary"><Menu /></Button>
                             </DrawerTrigger>
                             <DrawerContent>
-                                <a
-                                    href="/sufian_resume.pdf"
-                                    download
-                                >
-                                    <Button className="rounded-full border-2 border-primary text-[#d5d5d5] bg-transparent hover:bg-primary"><Download strokeWidth={2}/>Resume</Button>
-                                </a>
+                                <ResumeButton/>
                             </DrawerContent>
                         </Drawer>
                     </div>

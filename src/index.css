@@ -27,8 +27,8 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: #ac76e2;
   --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: #18212F;
+  --color-secondary-foreground: #1E2939;
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);

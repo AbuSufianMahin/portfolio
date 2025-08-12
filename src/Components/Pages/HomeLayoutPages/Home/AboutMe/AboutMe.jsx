@@ -8,7 +8,7 @@ const AboutMe = () => {
                     {/* <p className="text-[#d5d5d5] ">An insight into my background, the passions that fuel my work, and the experiences that shape how I approach technology and life.</p> */}
                 </div>
 
-                <div className="flex flex-col xl:flex-row items-center gap-8 mt-8 lg:mt-16">
+                <div className="flex flex-col xl:flex-row items-center gap-8 mt-8 lg:mt-12">
                     <div className='space-y-3 text-sm md:text-base leading-relaxed text-[#d5d5d5] flex-1'>
                         <p>
                             Hi, I'm <span className="font-bold">Abu Sufian Mahin</span>, a Computer Science undergraduate at <span className="font-bold">BRAC University</span> with a passion for learning and creating. I learned Python as part of my studies here, completing projects like a fraud detection machine learning model. I've also developed web applications using React and worked with both SQL and NoSQL databases.
@@ -24,7 +24,7 @@ const AboutMe = () => {
                         </p>
 
                     </div>
-                    <div className="w-full flex flex-col justify-center space-y-8 text-[#d5d5d5] bg-gray-800 rounded-lg p-6 shadow-lg flex-1">
+                    <div className="w-full flex flex-col justify-center space-y-8 text-[#d5d5d5] bg-gray-800 rounded-xl p-6 shadow-lg flex-1">
                         <h3 className="text-2xl font-semibold mb-4 text-primary">Fun Facts</h3>
                         <ul className="list-disc list-inside space-y-2">
                             <li>Former professional Rainbow Six Siege player 🎮</li>
