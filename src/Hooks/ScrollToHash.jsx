@@ -8,11 +8,11 @@ const ScrollToHash = () => {
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.replace("#", "");
-      const el = document.getElementById(id);
-      if (el) {
+      const element = document.getElementById(id);
+      if (element) {
         setTimeout(() => {
-          el.scrollIntoView({ behavior: "smooth" });
-        }, 50);
+          element.scrollIntoView({ behavior: "smooth" });
+        });
       }
     }
   }, [location]);
