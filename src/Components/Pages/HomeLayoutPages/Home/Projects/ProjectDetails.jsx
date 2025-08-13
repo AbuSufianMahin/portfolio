@@ -29,8 +29,8 @@ const ProjectDetails = () => {
                     {projectInfo.techList.map(({ name, icon }, indx) => (
                         <Tooltip key={indx}>
                             <TooltipTrigger>
-                                <div className="flex flex-col items-center justify-center w-8 h-8 lg:w-12 lg:h-12 rounded-full bg-gray-800 text-white shadow-md">
-                                    <img src={icon} alt={`${name} logo`} className="w-6 h-6 lg:w-8 lg:h-8 mb-1" />
+                                <div className="flex flex-col items-center justify-center w-8 h-8 md:w-12 md:h-12 rounded-full bg-gray-800 text-white shadow-md">
+                                    <img src={icon} alt={`${name} logo`} className="w-6 h-6 md:w-8 md:h-8 mb-1" />
                                 </div>
                             </TooltipTrigger>
                             <TooltipContent side="bottom">
