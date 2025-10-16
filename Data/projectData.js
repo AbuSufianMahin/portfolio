@@ -1,16 +1,47 @@
 import tasklanceHeaderSS from "../src/assets/Images/TaskLance-header.png"
 import dinemanagerHeaderSS from "../src/assets/Images/DineManager-header.png"
 import petconnectHeaderSS from "../src/assets/Images/PetConnect-header.png"
+import quizPilotSS from "../src/assets/Images/QuizPilot-quizpage.png"
 
 import reactLogo from "../src/assets/Icons/react.svg"
 import tailwindLogo from "../src/assets/Icons/tailwindcss.svg"
 import mongoDBLogo from "../src/assets/Icons/mongodb.svg"
 import shadcnLogo from "../src/assets/Icons/shadcnui.svg"
+import nextJSLogo from "../src/assets/Icons/nextjs.svg"
 
-
+// hyphen is needed between the project words for good URL  
 const projectsData = [
     {
         id: 1,
+        name: "Quiz-Pilot",
+        image: quizPilotSS,
+        description:
+            "QuizPilot is a cutting-edge EdTech platform built with Next.js and NextAuth, designed to make learning programming languages fun, interactive, and accessible for everyone.",
+        techList: [
+            { name: "NextJS", icon: nextJSLogo },
+            { name: "TailwindCSS", icon: tailwindLogo },
+            { name: "Shadcn", icon: shadcnLogo },
+            { name: "MongoDB", icon: mongoDBLogo },
+        ],
+        liveLink: "https://quiz-pilot-sbpg.vercel.app",
+        githubLink: "https://github.com/AsyncRifat/quiz-pilot",
+
+        challenges: [],
+        improvements: [
+            "Convert project to TypeScript for better type safety.",
+            "Enhance chatbot with context awareness and richer responses.",
+            "Add detailed performance analytics and interactive UI features."
+        ],
+        isTeamProject: true,
+        myContribution: [
+            "Built an interactive quiz platform with category-wise quizzes and score tracking.",
+            "Integrated a Gemini-powered chatbot for user assistance.",
+            "Implemented real-time leaderboard analytics to boost engagement.",
+        ]
+
+    },
+    {
+        id: 2,
         name: "PetConnect",
         image: petconnectHeaderSS,
         description:
@@ -33,9 +64,12 @@ const projectsData = [
             "Add multilingual support for global adoption.",
             "Include video introductions for pets.",
         ],
+
+        isTeamProject: false,
+        myContribution: []
     },
     {
-        id: 2,
+        id: 3,
         name: "TaskLance",
         image: tasklanceHeaderSS,
         description:
@@ -57,9 +91,12 @@ const projectsData = [
             "Add skill-based freelancer recommendations.",
             "Implement project milestone tracking.",
         ],
+
+        isTeamProject: false,
+        myContribution: []
     },
     {
-        id: 3,
+        id: 4,
         name: "Dine-Manager",
         image: dinemanagerHeaderSS,
         description:
@@ -81,6 +118,9 @@ const projectsData = [
             "Enable multi-branch order tracking.",
             "Provide detailed analytics for restaurant owners.",
         ],
+
+        isTeamProject: false,
+        myContribution: []
     },
 ];
 

@@ -13,7 +13,7 @@ const Projects = () => {
                 <h1 className="text-3xl text-primary font-bold text-center mb-8">Projects</h1>
 
                 <div className="grid md:grid-cols-2 gap-4 lg:gap-8">
-                    {projectsData.map(({ id, name, image, description, techList }) => (
+                    {projectsData.map(({ id, name, image, description, techList, isTeamProject }) => (
                         <div
                             key={id}
                             className="flex flex-col gap-4 border border-gray-700 bg-secondary rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
@@ -27,13 +27,22 @@ const Projects = () => {
                             </div>
 
 
-                            <div className="px-6 pb-4 flex flex-col justify-between h-full gap-4">
+                            <div className="px-4 md:px-6 pb-4 flex flex-col justify-between h-full gap-4">
                                 <div className="justify-center">
-                                    <NavLink to={`/project-details/${name}`}>
-                                        <h2 className="text-2xl font-semibold text-primary mb-2 md:mb-3  hover:scale-102 transition duration-300 w-fit">{name.replace("-", " ")}</h2>
-                                    </NavLink>
+                                    <div className='flex items-center gap-4 mb-2 md:mb-4'>
+                                        <NavLink to={`/project-details/${name}`}>
+                                            <h1 className="text-2xl md:text-4xl font-extrabold text-primary">{name.replace("-", " ")}</h1>
+                                        </NavLink>
+                                        {
+                                            isTeamProject &&
+                                            <span className="text-xs md:text-sm bg-blue-100 text-blue-800 font-semibold px-2 py-1 rounded-full">
+                                                Team Project
+                                            </span>
+                                        }
+                                    </div>
 
-                                    <p className="text-[#d5d5d5] text-xs lg:text-sm">{description}</p>
+                                    <p className="text-[#d5d5d5] text-left md:text-left text-xs lg:text-sm">{description}</p>
+                                    
                                 </div>
 
                                 {/* Right: Tech icons */}

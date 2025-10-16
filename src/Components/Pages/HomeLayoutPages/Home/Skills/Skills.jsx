@@ -1,60 +1,7 @@
-import reactLogo from "../../../../../assets/Icons/react.svg"
-import css3Logo from "../../../../../assets/Icons/css3.svg"
-import expressLogo from "../../../../../assets/Icons/express.svg"
-import githubLogo from "../../../../../assets/Icons/github.svg"
-import htmlLogo from "../../../../../assets/Icons/html5.svg"
-import javascriptLogo from "../../../../../assets/Icons/javascript.svg"
-import mongodbLogo from "../../../../../assets/Icons/mongodb.svg"
-import mysqlLogo from "../../../../../assets/Icons/mysql.svg"
-import nodejsLogo from "../../../../../assets/Icons/nodejs.svg"
-import pythonLogo from "../../../../../assets/Icons/python.svg"
-import shadcnuiLogo from "../../../../../assets/Icons/shadcnui.svg"
-import tailwindcssLogo from "../../../../../assets/Icons/tailwindcss.svg"
-import vercelLogo from "../../../../../assets/Icons/vercel.svg"
-import vscodeLogo from "../../../../../assets/Icons/vscode.svg"
-
+import skillsData from "../../../../../../Data/skillsData"; 
 
 
 const Skills = () => {
-
-    const skills = [
-        {
-            category: "Languages",
-            details: [
-                { name: "Python", icon: pythonLogo },
-                { name: "JavaScript", icon: javascriptLogo },
-            ],
-        },
-        {
-            category: "Frontend",
-            details: [
-                { name: "HTML", icon: htmlLogo },
-                { name: "CSS3", icon: css3Logo },
-                { name: "ReactJS", icon: reactLogo },
-                { name: "Tailwind CSS", icon: tailwindcssLogo },
-                { name: "shadcn", icon: shadcnuiLogo },
-            ],
-        },
-        {
-            category: "Backend",
-            details: [
-                { name: "Node.js", icon: nodejsLogo },
-                { name: "Express.js", icon: expressLogo },
-                { name: "MongoDB", icon: mongodbLogo },
-                { name: "MySQL", icon: mysqlLogo },
-            ],
-        },
-        {
-            category: "Tools",
-            details: [
-                { name: "GitHub", icon: githubLogo },
-                { name: "VS Code", icon: vscodeLogo },
-                { name: "Vercel", icon: vercelLogo },
-            ],
-        },
-    ];
-
-
     return (
         <section id="skills" className="py-4 md:py-10">
             <div className="w-11/12 md:w-10/12 max-w-7xl mx-auto">
@@ -66,7 +13,7 @@ const Skills = () => {
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2 xl:gap-4 mt-4 md:mt-6">
 
                             {/* category */}
-                            {skills.map(({ category, details }) => (
+                            {skillsData.map(({ category, details }) => (
                                 <div key={category} className="p-4 bg-gray-800 border border-gray-700 rounded-lg">
                                     <h3 className="text-primary text-xl font-bold text-center">{category}</h3>
 

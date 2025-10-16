@@ -19,7 +19,12 @@ const ProjectDetails = () => {
                     />
                 </div>
 
-                <h1 className="text-2xl md:text-4xl font-extrabold text-primary mb-2 md:mb-4">{projectInfo.name.replace("-", " ")}</h1>
+                <div className='flex items-center gap-4 mb-2 md:mb-4'>
+                    <h1 className="text-2xl md:text-4xl font-extrabold text-primary">{projectInfo.name.replace("-", " ")}</h1>
+                    <span className="text-xs md:text-sm bg-blue-100 text-blue-800 font-semibold px-2 py-1 rounded-full">
+                        Team Project
+                    </span>
+                </div>
                 <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-2 md:mb-6">
                     {projectInfo.description}
                 </p>
@@ -65,14 +70,26 @@ const ProjectDetails = () => {
 
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
-                    <div>
-                        <h2 className="text-xl md:text-2xl font-bold mb-3">Challenges Faced</h2>
-                        <ul className="text-sm md:text-base list-disc list-inside text-muted-foreground space-y-2">
-                            {projectInfo.challenges.map((challenge, idx) => (
-                                <li key={idx}>{challenge}</li>
-                            ))}
-                        </ul>
-                    </div>
+                    {
+                        projectInfo.isTeamProject ?
+                            <div>
+                                <h2 className="text-xl md:text-2xl font-bold mb-3">My Contributions</h2>
+                                <ul className="text-sm md:text-base list-disc list-inside text-muted-foreground space-y-2">
+                                    {projectInfo.myContribution.map((contribution, idx) => (
+                                        <li key={idx}>{contribution}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            :
+                            <div>
+                                <h2 className="text-xl md:text-2xl font-bold mb-3">Challenges Faced</h2>
+                                <ul className="text-sm md:text-base list-disc list-inside text-muted-foreground space-y-2">
+                                    {projectInfo.challenges.map((challenge, idx) => (
+                                        <li key={idx}>{challenge}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                    }
 
                     <div>
                         <h2 className="text-xl md:text-2xl font-bold mb-3">Future Improvements</h2>
