@@ -31,7 +31,7 @@ const Projects = () => {
                                 <div className="justify-center">
                                     <div className='flex items-center gap-4 mb-2 md:mb-4'>
                                         <NavLink to={`/project-details/${name}`}>
-                                            <h1 className="text-2xl md:text-4xl font-extrabold text-primary">{name.replace("-", " ")}</h1>
+                                            <h1 className="text-2xl sm:text-3xl xl:text-4xl font-extrabold text-primary">{name.replace("-", " ")}</h1>
                                         </NavLink>
                                         {
                                             isTeamProject &&

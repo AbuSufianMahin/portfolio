@@ -7,6 +7,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "../../../../ui/tooltip"
 const ProjectDetails = () => {
     const { projectName } = useParams();
     const projectInfo = projectsData.find(project => projectName === project.name);
+    console.log(projectInfo.isTeamProject);
 
     return (
         <section className="w-full min-h-screen bg-background py-10">
@@ -20,10 +21,13 @@ const ProjectDetails = () => {
                 </div>
 
                 <div className='flex items-center gap-4 mb-2 md:mb-4'>
-                    <h1 className="text-2xl md:text-4xl font-extrabold text-primary">{projectInfo.name.replace("-", " ")}</h1>
-                    <span className="text-xs md:text-sm bg-blue-100 text-blue-800 font-semibold px-2 py-1 rounded-full">
-                        Team Project
-                    </span>
+                    <h1 className="text-2xl sm:text-3xl xl:text-4xl font-extrabold text-primary">{projectInfo.name.replace("-", " ")}</h1>
+                    {
+                        projectInfo.isTeamProject &&
+                        <span className="text-xs md:text-sm bg-blue-100 text-blue-800 font-semibold px-2 py-1 rounded-full">
+                            Team Project
+                        </span>
+                    }
                 </div>
                 <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-2 md:mb-6">
                     {projectInfo.description}
