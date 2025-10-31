@@ -30,6 +30,8 @@ const Header = () => {
                                     strings: designation,
                                     autoStart: true,
                                     loop: true,
+                                    delay: 50, 
+                                    deleteSpeed: 20,
                                 }}
                             />
                         </h3>
