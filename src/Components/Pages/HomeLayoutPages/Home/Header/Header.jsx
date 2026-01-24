@@ -54,8 +54,8 @@ const Header = () => {
           </p>
 
           <div className="my-4 flex items-center gap-3">
-            <h2 className="text-base">Let's connect:</h2>
-            <SocialIcons iconSize={22} iconGap={4} />
+            <h2 className="text-lg">Socials:</h2>
+            <SocialIcons iconSize={20} iconGap={4} />
           </div>
 
           <div className="mt-4 lg:mt-6">
