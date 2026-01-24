@@ -1,8 +1,8 @@
 import { useParams } from 'react-router';
 import projectsData from '../../../../../../Data/projectData';
-import { ExternalLink, Github } from "lucide-react";
 
 import { Tooltip, TooltipContent, TooltipTrigger } from "../../../../ui/tooltip"
+import { ExternalLink, Github } from 'lucide-react';
 
 const ProjectDetails = () => {
     const { projectName } = useParams();
@@ -50,23 +50,23 @@ const ProjectDetails = () => {
                 </div>
 
 
-                <div className="flex gap-2 md:gap-4 mb-10">
+                <div className="flex sm:justify-end gap-2 md:gap-4 mb-10">
                     <a
                         href={projectInfo.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="border  border-gray-700 flex  items-center text-xs md:text-base gap-1 md:gap-2 bg-gray-800 text-white px-5 py-2 rounded-lg hover:bg-gray-700 transition"
+                        className="border  border-gray-700 flex  items-center text-xs md:text-sm lg:text-base gap-1 md:gap-2 bg-gray-800 text-white px-5 py-2 rounded-lg hover:bg-gray-700 transition"
                     >
-                        <Github size={18} />
+                        <Github />
                         Repository
                     </a>
                     <a
                         href={projectInfo.liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="border  border-gray-700 flex items-center text-xs md:text-base gap-1 md:gap-2 bg-primary text-white px-3 py-2 rounded-lg hover:bg-primary/90 transition"
+                        className="border  border-gray-700 flex items-center text-xs md:text-sm lg:text-base gap-1 md:gap-2 bg-primary text-white px-3 py-2 rounded-lg hover:bg-primary/90 transition"
                     >
-                        <ExternalLink size={18} />
+                        <ExternalLink className='w-5' />
                         Live Project
                     </a>
 
