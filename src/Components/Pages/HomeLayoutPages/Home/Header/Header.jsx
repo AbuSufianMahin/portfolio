@@ -15,7 +15,7 @@ const Header = () => {
     <section id="home" className="py-12 lg:py-20">
       <div className="w-11/12 md:w-10/12 max-w-6xl mx-auto flex flex-col md:flex-row text-center md:text-left items-center gap-6 lg:gap-10">
         <div className="md:flex-4 lg:flex-2">
-          <div className="p-5 rounded-full bg-[#444444] h-96 w-96 overflow-hidden">
+          <div className="p-4 md:p-6 rounded-full bg-[#444444] w-64 md:w-80 lg:w-96 aspect-square overflow-hidden">
             <img
               src={sufianPotrait}
               alt=""
@@ -49,9 +49,9 @@ const Header = () => {
             way.
           </p>
 
-          <div className="my-4 flex flex-col md:flex-row items-center gap-3">
+          <div className="lg:hidden my-4 flex flex-col md:flex-row items-center gap-2 md:gap-5">
             <h2 className="text-lg">Socials:</h2>
-            <SocialIcons iconSize={20} iconGap={4} />
+            <SocialIcons iconSize={24} iconGap={4} />
           </div>
 
           <div className="mt-4 lg:mt-6">
