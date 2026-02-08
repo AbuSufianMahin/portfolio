@@ -1,13 +1,7 @@
-import portfolioDP from "../../../../../assets/Images/porfolio-dp.jpg";
+import sufianPotrait from "../../../../../assets/Images/sufian-potrait.jpg";
 import { Button } from "../../../../ui/button";
 import { Download } from "lucide-react";
 import Typewriter from "typewriter-effect";
-import {
-  FaFacebookF,
-  FaWhatsapp,
-  FaGithub,
-  FaLinkedinIn,
-} from "react-icons/fa";
 import SocialIcons from "../../../../Common/SocialIcons";
 
 const Header = () => {
@@ -21,10 +15,12 @@ const Header = () => {
     <section id="home" className="py-12 lg:py-20">
       <div className="w-11/12 md:w-10/12 max-w-6xl mx-auto flex flex-col md:flex-row text-center md:text-left items-center gap-6 lg:gap-10">
         <div className="md:flex-4 lg:flex-2">
-          <div className="p-5 rounded-full bg-[#444444]">
-            <div className="rounded-full overflow-hidden">
-              <img src={portfolioDP} alt="" className="w-full" />
-            </div>
+          <div className="p-5 rounded-full bg-[#444444] h-96 w-96 overflow-hidden">
+            <img
+              src={sufianPotrait}
+              alt=""
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
         </div>
         <div className="text-[#d5d5d5] text-xl md:flex-5 lg:flex-3 px-4">
