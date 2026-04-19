@@ -7,7 +7,6 @@ import { ExternalLink, Github } from 'lucide-react';
 const ProjectDetails = () => {
     const { projectName } = useParams();
     const projectInfo = projectsData.find(project => projectName === project.name);
-    console.log(projectInfo.isTeamProject);
 
     return (
         <section className="w-full min-h-screen bg-background py-10">

@@ -42,7 +42,8 @@ const Contact = () => {
                 });
                 reset();
             })
-            .catch(() => {
+            .catch((error) => {
+                // console.error("EmailJS Error:", error);
                 Swal.fire({
                     icon: "error",
                     title: "Oops...",
